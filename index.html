@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teachers' Football Gia Định — Giới thiệu cầu thủ</title>
+<style>
+:root{--bg:#07090f;--panel:#0f1420;--line:#1f2937;--text:#f4f6fb;--mut:#8b95a8;--c:#ff3b3b;--c2:#ffb020;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;position:relative;background:radial-gradient(60% 60% at 15% 50%,#ff3b3b33,transparent),radial-gradient(60% 60% at 85% 50%,#22d3ee33,transparent)}
+.tag{letter-spacing:.4em;font-size:12px;color:var(--mut);text-transform:uppercase}
+.vs{display:flex;align-items:center;gap:clamp(12px,5vw,60px);margin:28px 0;flex-wrap:wrap;justify-content:center}
+.club{font-size:clamp(28px,6vw,64px);font-weight:900;text-transform:uppercase;line-height:1;animation:rise .9s both}
+.club small{display:block;font-size:12px;letter-spacing:.3em;color:var(--mut);margin-top:10px;font-weight:500}
+.a{color:#ff3b3b;text-shadow:0 0 30px #ff3b3b88}.b{color:#22d3ee;text-shadow:0 0 30px #22d3ee88;animation-delay:.2s}
+.x{font-size:clamp(24px,4vw,42px);font-weight:900;border:2px solid var(--line);border-radius:50%;width:84px;height:84px;display:grid;place-items:center;animation:pulse 2s infinite}
+.info{color:var(--mut);margin-bottom:28px}
+.btn{background:linear-gradient(90deg,#ff3b3b,#ffb020);color:#111;font-weight:800;border:0;padding:15px 34px;border-radius:99px;cursor:pointer;font-size:15px;text-decoration:none;display:inline-block;transition:transform .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #ffffff08}}
+section{max-width:1100px;margin:0 auto;padding:70px 20px}
+h2{font-size:clamp(24px,4vw,38px);text-align:center;margin-bottom:26px;text-transform:uppercase}
+.tabs{display:flex;justify-content:center;gap:10px;margin-bottom:24px}
+.tab{background:var(--panel);color:var(--mut);border:1px solid var(--line);padding:12px 26px;border-radius:99px;cursor:pointer;font-weight:700;transition:.3s}
+.tab.on{color:#111;background:var(--c);border-color:var(--c);box-shadow:0 0 24px color-mix(in srgb,var(--c) 60%,transparent)}
+.coach{text-align:center;color:var(--mut);font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}.coach b{color:var(--c2)}
+.stage{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:20px;background:linear-gradient(135deg,var(--panel),#0a0e17);border:1px solid var(--line);border-radius:24px;overflow:hidden;min-height:480px;transition:border-color .5s}
+.stage::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 50%,color-mix(in srgb,var(--c) 40%,transparent),transparent 60%);transition:.6s}
+.num{position:absolute;left:4%;top:-2%;font-size:clamp(140px,26vw,320px);font-weight:900;color:transparent;-webkit-text-stroke:2px color-mix(in srgb,var(--c) 55%,transparent);line-height:1;user-select:none}
+.pic{position:relative;display:flex;align-items:flex-end;justify-content:center;min-height:320px}
+.pic img,.pic svg{max-height:440px;width:auto;max-width:90%;filter:drop-shadow(0 20px 30px #000a)}
+.in .pic>*{animation:slide .8s cubic-bezier(.2,.9,.3,1) both}
+.in .num{animation:fade 1s both}
+@keyframes slide{from{opacity:0;transform:translateX(-80px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0;transform:scale(1.3)}to{opacity:1;transform:none}}
+.det{position:relative;padding:36px 32px 36px 8px;display:flex;flex-direction:column;justify-content:center}
+.pos{color:var(--c);letter-spacing:.3em;font-size:12px;font-weight:700;text-transform:uppercase}
+.name{font-size:clamp(30px,5vw,54px);font-weight:900;text-transform:uppercase;line-height:1.05;margin:8px 0 12px}
+.name span{display:inline-block;opacity:0;animation:letter .5s forwards}
+@keyframes letter{from{opacity:0;transform:translateY(30px) rotateX(90deg)}to{opacity:1;transform:none}}
+.slogan{color:var(--c2);font-style:italic;min-height:48px;margin-bottom:20px;border-left:3px solid var(--c);padding-left:12px}
+.ovr{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.ovr b{font-size:46px;color:var(--c)}.ovr span{color:var(--mut);font-size:12px;letter-spacing:.2em}
+.st{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.st div{font-size:12px;color:var(--mut)}
+.st em{float:right;font-style:normal;color:var(--text);font-weight:700}
+.bar{height:6px;background:var(--line);border-radius:9px;margin-top:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c),var(--c2));border-radius:9px;transition:width 1.2s cubic-bezier(.2,.9,.3,1)}
+.nav{display:flex;align-items:center;gap:10px;margin-top:20px;justify-content:center;flex-wrap:wrap}
+.thumb{min-width:52px;height:52px;padding:0 8px;border-radius:14px;border:2px solid var(--line);background:var(--panel);color:var(--mut);font-weight:800;cursor:pointer;transition:.25s}
+.thumb.on{border-color:var(--c);color:var(--text);transform:translateY(-6px);box-shadow:0 8px 20px color-mix(in srgb,var(--c) 40%,transparent)}
+.arr{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--text);cursor:pointer;font-size:18px}
+.arr:hover{border-color:var(--c)}
+footer{text-align:center;color:var(--mut);font-size:12px;padding:30px}
+@media(max-width:760px){.stage{grid-template-columns:1fr}.det{padding:0 20px 28px}.pic{min-height:260px}.pic img,.pic svg{max-height:300px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="tag">Teachers' Football Gia Định</div>
+  <div class="vs">
+    <div class="club a">Team<br>A<small>HLV NGUYỄN DANH TUẤN</small></div>
+    <div class="x">VS</div>
+    <div class="club b">Team<br>B<small>HLV TÔ LÂM VIỄN KHOA</small></div>
+  </div>
+  <p class="info">Giờ thi đấu • Ngày • Sân — cập nhật tại đây</p>
+  <a class="btn" href="#lineup">Xem đội hình ra sân ↓</a>
+</header>
+
+<section id="lineup">
+  <h2>Gặp gỡ các chiến binh</h2>
+  <div class="tabs" id="tabs"></div>
+  <div class="coach" id="coach"></div>
+  <div class="stage in" id="stage">
+    <div class="num" id="num"></div>
+    <div class="pic" id="pic"></div>
+    <div class="det">
+      <div class="pos" id="pos"></div>
+      <div class="name" id="name"></div>
+      <div class="slogan" id="slogan"></div>
+      <div class="ovr"><b id="ovr">0</b><span>CHỈ SỐ TỔNG QUÁT</span></div>
+      <div class="st" id="st"></div>
+    </div>
+  </div>
+  <div class="nav" id="nav"></div>
+</section>
+<footer>© Teachers' Football Gia Định</footer>
+
+<script>
+/* ===== DỮ LIỆU: sửa tên, ảnh (img: "đường-dẫn-ảnh-PNG-nền-trong"), chỉ số, slogan tại đây ===== */
+const TEAMS=[
+{name:"Team A",coach:"Nguyễn Danh Tuấn",c:"#ff3b3b",c2:"#ffb020",players:[
+ {num:9,name:"Thầy Phúc",pos:"Thủ môn",slogan:"Khung thành này, tôi gác.",img:"",s:[60,38,68,52,90,84]},
+ {num:10,name:"Thầy Hùng",pos:"Đội trưởng",slogan:"Dẫn dắt bằng trái tim.",img:"",s:[80,80,90,86,70,78]},
+ {num:3,name:"Thầy Nhật",pos:"Cầu thủ",slogan:"Chạy không biết mệt.",img:"",s:[82,60,72,70,76,88]},
+ {num:2,name:"Thầy Tiên",pos:"Cầu thủ",slogan:"Kiên cường đến phút chót.",img:"",s:[72,52,70,64,86,84]},
+ {num:20,name:"Thầy Trị",pos:"Cầu thủ",slogan:"Bình tĩnh là sức mạnh.",img:"",s:[70,66,84,78,74,76]},
+ {num:7,name:"Thầy Phát",pos:"Cầu thủ",slogan:"Tốc độ là vũ khí.",img:"",s:[92,76,74,88,50,74]},
+ {num:333,name:"Thầy Sang",pos:"Cầu thủ",slogan:"Ba lần nỗ lực, một chiến thắng.",img:"",s:[78,82,76,80,68,82]},
+ {num:11,name:"Thầy Bensaci",pos:"Cầu thủ",slogan:"Kỹ thuật làm nên đẳng cấp.",img:"",s:[84,78,82,92,48,72]},
+ {num:68,name:"Thầy Liêm",pos:"Cầu thủ",slogan:"Bàn thắng là bài học hay nhất.",img:"",s:[80,92,74,84,44,80]}]},
+{name:"Team B",coach:"Tô Lâm Viễn Khoa",c:"#22d3ee",c2:"#a78bfa",players:[
+ {num:95,name:"Thầy Đạo",pos:"Thủ môn",slogan:"Mọi cú sút dừng lại ở đây.",img:"",s:[58,36,66,50,91,86]},
+ {num:6,name:"Thầy Lĩnh",pos:"Đội trưởng",slogan:"Đoàn kết tạo nên sức mạnh.",img:"",s:[78,76,88,82,74,80]},
+ {num:71,name:"Thầy Hoàng",pos:"Cầu thủ",slogan:"Đã ra sân là cống hiến.",img:"",s:[76,70,78,74,80,84]},
+ {num:22,name:"Thầy Phong",pos:"Cầu thủ",slogan:"Mạnh mẽ như cơn gió.",img:"",s:[88,72,70,80,66,82]},
+ {num:70,name:"Thầy Hiển",pos:"Cầu thủ",slogan:"Giản dị nhưng hiệu quả.",img:"",s:[74,68,84,76,78,78]},
+ {num:29,name:"Thầy Đức",pos:"Cầu thủ",slogan:"Chắc chắn từng đường bóng.",img:"",s:[70,56,76,66,88,86]},
+ {num:5,name:"Thầy Linh",pos:"Cầu thủ",slogan:"Linh hoạt, bất ngờ, quyết đoán.",img:"",s:[84,74,80,90,56,72]},
+ {num:28,name:"Thầy Hoài",pos:"Cầu thủ",slogan:"Đam mê không bao giờ tắt.",img:"",s:[80,80,78,82,64,88]},
+ {num:8,name:"Thầy Vũ",pos:"Cầu thủ",slogan:"Sút là ghi.",img:"",s:[82,92,72,84,46,78]}]}];
+const KEYS=["Tốc độ","Sút","Chuyền","Rê bóng","Phòng ngự","Thể lực"];
+let t=0,i=0,tw,auto;
+const $=id=>document.getElementById(id);
+const root=document.documentElement;
+
+function photo(p){
+  if(p.img) return `<img src="${p.img}" alt="${p.name}">`;
+  return `<svg viewBox="0 0 200 280" aria-label="${p.name}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--c)"/><stop offset="1" stop-color="var(--c2)"/></linearGradient></defs><circle cx="100" cy="60" r="38" fill="url(#g)"/><path d="M20 280c0-70 30-110 80-110s80 40 80 110z" fill="url(#g)"/><text x="100" y="250" text-anchor="middle" font-size="46" font-weight="900" fill="#0008">${p.num}</text></svg>`;
+}
+function count(el,to){const s=performance.now();(function f(n){const k=Math.min((n-s)/1100,1);el.textContent=Math.round(to*k);if(k<1)requestAnimationFrame(f)})(s)}
+
+function show(){
+  const T=TEAMS[t],p=T.players[i];
+  root.style.setProperty("--c",T.c);root.style.setProperty("--c2",T.c2);
+  const st=$("stage");st.classList.remove("in");void st.offsetWidth;st.classList.add("in");
+  $("num").textContent=p.num;$("num").style.fontSize=String(p.num).length>2?"clamp(90px,17vw,220px)":"";$("coach").innerHTML="HLV <b>"+T.coach+"</b>";$("pic").innerHTML=photo(p);$("pos").textContent=p.pos+" • "+T.name;
+  $("name").innerHTML=[...p.name].map((ch,k)=>`<span style="animation-delay:${.25+k*.035}s">${ch===" "?"&nbsp;":ch}</span>`).join("");
+  clearInterval(tw);const sl=$("slogan");sl.textContent="";let k=0;const txt="“"+p.slogan+"”";
+  setTimeout(()=>{tw=setInterval(()=>{sl.textContent=txt.slice(0,++k);if(k>=txt.length)clearInterval(tw)},35)},700);
+  $("st").innerHTML=KEYS.map((n,k)=>`<div>${n}<em>0</em><div class="bar"><i></i></div></div>`).join("");
+  const rows=$("st").children;
+  setTimeout(()=>p.s.forEach((v,k)=>{rows[k].querySelector("i").style.width=v+"%";count(rows[k].querySelector("em"),v)}),500);
+  count($("ovr"),Math.round(p.s.reduce((a,b)=>a+b)/6));
+  document.querySelectorAll(".tab").forEach((e,k)=>e.classList.toggle("on",k===t));
+  document.querySelectorAll(".thumb").forEach((e,k)=>e.classList.toggle("on",k===i));
+}
+function build(){
+  $("tabs").innerHTML=TEAMS.map((T,k)=>`<button class="tab" data-t="${k}">${T.name}</button>`).join("");
+  $("nav").innerHTML=`<button class="arr" id="pv">←</button>`+TEAMS[t].players.map((p,k)=>`<button class="thumb" data-i="${k}">${p.num}</button>`).join("")+`<button class="arr" id="nx">→</button>`;
+  $("pv").onclick=()=>go(-1);$("nx").onclick=()=>go(1);
+  document.querySelectorAll(".thumb").forEach(b=>b.onclick=()=>{i=+b.dataset.i;show();reset()});
+  document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{t=+b.dataset.t;i=0;build();show();reset()});
+}
+function go(d){const n=TEAMS[t].players.length;i=(i+d+n)%n;show()}
+function reset(){clearInterval(auto);auto=setInterval(()=>{const n=TEAMS[t].players.length;if(i===n-1){t=(t+1)%TEAMS.length;i=0;build()}else i++;show()},7000)}
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){go(1);reset()}if(e.key==="ArrowLeft"){go(-1);reset()}});
+build();show();reset();
+</script>
+</body>
+</html>
